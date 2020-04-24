@@ -3,13 +3,13 @@ pipeline {
     stages {
         stage("Checkout code") {
             steps {
-                //snDevOpsStep()
+                snDevOpsStep()
                 checkout scm
             }
         }
         stage("Build and test") {
             steps {
-                //snDevOpsStep()
+                snDevOpsStep()
                 sh 'npm install'
                 sh 'npm test'
             }
