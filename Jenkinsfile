@@ -10,8 +10,8 @@ pipeline {
         stage("Build and test") {
             steps {
                 //snDevOpsStep()
-                npm install
-                npm test
+                sh 'npm install'
+                sh 'npm test'
             }
             post {
        		   always {
