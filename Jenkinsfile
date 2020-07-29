@@ -13,11 +13,11 @@ pipeline {
                 sh 'npm install'
                 sh 'npm test'
             }
-           /* post {
+           post {
        		   always {
           		    junit '**/build/reports/e2e/*.xml'
         	    }
-            }*/
+            }
         }       
     }    
 }
