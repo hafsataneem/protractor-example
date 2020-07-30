@@ -24,11 +24,11 @@ exports.config = {
                 displayStacktrace: true
             }
         }));
-        //const JasmineReporters = require('jasmine-reporters');
-        //jasmine.getEnv().addReporter(new JasmineReporters.JUnitXmlReporter({
-        //    savePath: 'build/reports/e2e',
-        //    consolidateAll: false
-        //}));
+        const JasmineReporters = require('jasmine-reporters');
+        jasmine.getEnv().addReporter(new JasmineReporters.JUnitXmlReporter({
+            savePath: 'build/reports/e2e',
+            consolidateAll: false
+        }));
     },
 
     capabilities: {
